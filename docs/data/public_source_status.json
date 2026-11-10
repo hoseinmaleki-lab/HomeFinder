@@ -1,17 +1,19 @@
 {
-  "checked_at": null,
+  "checked_at": "2026-11-10",
   "source_count": 2,
-  "listing_count": 0,
+  "listing_count": 7,
   "sources": [
     {
       "name": "Bentley Homes",
-      "state": "not_run",
-      "count": 0
+      "state": "checked",
+      "count": 5,
+      "checked_at": "2026-11-10"
     },
     {
       "name": "Robin Gordon Group",
-      "state": "not_run",
-      "count": 0
+      "state": "checked",
+      "count": 2,
+      "checked_at": "2026-11-10"
     }
   ]
 }
