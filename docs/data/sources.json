@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Bright MLS",
+    "type": "MLS",
+    "url": "https://www.brightmls.com/",
+    "note": "Ask your buyer's agent about permitted Coming Soon and Internet No listings."
+  },
+  {
+    "name": "Compass",
+    "type": "Brokerage / private listings",
+    "url": "https://www.compass.com/",
+    "note": "Ask Main Line agents about eligible Private Exclusives and Coming Soon properties."
+  },
+  {
+    "name": "Kurfiss Sotheby's International Realty",
+    "type": "Luxury brokerage",
+    "url": "https://www.kurfiss.com/",
+    "note": "Main Line luxury brokerage; inquire directly about quiet listings."
+  },
+  {
+    "name": "SERHANT.",
+    "type": "Brokerage",
+    "url": "https://serhant.com/",
+    "note": "Contact local agents regarding pocket and exclusive opportunities."
+  },
+  {
+    "name": "Bentley Homes",
+    "type": "Builder",
+    "url": "https://www.bentleyhomes.com/",
+    "note": "Check new-construction releases and contact the builder directly."
+  },
+  {
+    "name": "Zillow",
+    "type": "Public portal",
+    "url": "https://www.zillow.com/",
+    "note": "Useful baseline, not exhaustive."
+  },
+  {
+    "name": "Redfin",
+    "type": "Public portal",
+    "url": "https://www.redfin.com/",
+    "note": "Useful baseline, not exhaustive."
+  },
+  {
+    "name": "Realtor.com",
+    "type": "Public portal",
+    "url": "https://www.realtor.com/",
+    "note": "Useful baseline, not exhaustive."
+  }
+]
