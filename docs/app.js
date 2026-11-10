@@ -20,12 +20,13 @@ switch($('sort').value){case 'price-asc':matches.sort((a,b)=>(a.price||Infinity)
 $('matched').textContent=fmt.format(matches.length);$('count').textContent=matches.length+' of '+listings.length+' publicly sourced records';const empty=!matches.length;$('empty').hidden=!empty;$('tableWrap').hidden=empty||view!=='table';$('cards').hidden=empty||view!=='cards';if(empty){$('emptyTitle').textContent=listings.length?'No properties match your filters' :'No public listing records yet';$('emptyText').textContent=listings.length?'Try changing your town, budget or property requirements.':'Your search dashboard is ready. Public listing records will appear after the scheduled collection workflow runs successfully.'}const tb=$('tbody'),cards=$('cards');tb.replaceChildren(...matches.map(tableRow));cards.replaceChildren(...matches.map(listingCard))}
 function setView(v){view=v;for(const mode of ['table','card']){const btn=$(mode+'Btn');const on=mode===v;btn.classList.toggle('active',on);btn.setAttribute('aria-pressed',String(on))}render()}
 async function init(){try{
-const paths=['data/listings.json','data/public_listings.json','data/sources.json'];
+const paths=['data/listings.json','data/public_listings.json','data/sources.json','data/public_source_status.json'];
 const responses=await Promise.all(paths.map(p=>fetch(p,{cache:'no-store'})));
 if(responses.some(r=>!r.ok))throw Error('Could not load data files');
-const [feedItems,publicItems,sourceItems]=await Promise.all(responses.map(r=>r.json()));
+const [feedItems,publicItems,sourceItems,sourceStatus]=await Promise.all(responses.map(r=>r.json()));
 if(!Array.isArray(feedItems)||!Array.isArray(publicItems)||!Array.isArray(sourceItems))throw Error('Unexpected dataset format');
 listings=mergeListings([...feedItems,...publicItems]);sources=sourceItems.filter(x=>x&&typeof x==='object');
+const health=$('collectorHealth');if(health){const checks=Array.isArray(sourceStatus.sources)?sourceStatus.sources:[];health.replaceChildren();const heading=el('h3',null,'Connected source health');health.append(heading,el('p',null,checks.length+' automated sources · '+checks.filter(x=>x.state==='checked').length+' checked successfully · last collection '+value(sourceStatus.checked_at)));for(const x of checks){const p=el('p');p.append(el('strong',null,value(x.name)+': '),document.createTextNode(x.state==='checked'?`${Number(x.count)||0} qualifying homes`:'Unavailable — '+value(x.reason||'collection failed')));health.append(p)}}
 $('total').textContent=fmt.format(listings.length);$('sourceCount').textContent=fmt.format(sources.length);
 const dates=listings.map(x=>value(x.checked_at)).filter(Boolean).sort();
 $('lastCheck').textContent=dates.length?dates[dates.length-1]:'—';
