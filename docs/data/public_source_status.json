@@ -1,0 +1,17 @@
+{
+  "checked_at": null,
+  "source_count": 2,
+  "listing_count": 0,
+  "sources": [
+    {
+      "name": "Bentley Homes",
+      "state": "not_run",
+      "count": 0
+    },
+    {
+      "name": "Robin Gordon Group",
+      "state": "not_run",
+      "count": 0
+    }
+  ]
+}
