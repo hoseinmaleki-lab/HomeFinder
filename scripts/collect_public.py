@@ -3,7 +3,7 @@
 
 No logins, proxies, CAPTCHA evasion, MLS/VOW or private listing access.
 Checks robots.txt before each request. Only known source-specific parsers.
-Does NOT claim comprehensive coverage of the research directory.
+Attempts every public agent/brokerage directory website; structured-data extraction is not guaranteed.
 """
 from __future__ import annotations
 
@@ -181,13 +181,82 @@ def dedupe(items):
             combined[key].setdefault("also_listed_by", []).append(item["source"])
     return sorted(combined.values(), key=lambda x: (x["city"], x["address"]))
 
+
+def directory_sources():
+    """Try every publicly listed agent/brokerage, not private discovery channels."""
+    directory = json.loads(Path("docs/data/sources.json").read_text(encoding="utf-8"))
+    seen = {urlparse(x["url"]).netloc.lower().removeprefix("www.") for x in SOURCES}
+    result = []
+    for item in directory:
+        if item.get("type") != "Agent / brokerage":
+            continue
+        url = item.get("url", "")
+        host = urlparse(url).netloc.lower().removeprefix("www.")
+        if not url.startswith("https://") or not host or host in seen:
+            continue
+        seen.add(host)
+        result.append({"name": item["name"], "url": url, "parser": "structured"})
+    return result
+
+def structured_records(soup, source, checked):
+    """Conservatively read public schema.org real-estate JSON-LD; never guess missing data."""
+    results = []
+    for script in soup.select('script[type="application/ld+json"]'):
+        try:
+            payload = json.loads(script.string or script.get_text())
+        except (ValueError, TypeError):
+            continue
+        stack = [payload]
+        while stack:
+            node = stack.pop()
+            if isinstance(node, list):
+                stack.extend(node)
+                continue
+            if not isinstance(node, dict):
+                continue
+            stack.extend(v for v in node.values() if isinstance(v, (dict, list)))
+            kind = node.get("@type", "")
+            kinds = kind if isinstance(kind, list) else [kind]
+            if not any(k in ("SingleFamilyResidence", "House", "Residence", "RealEstateListing", "Apartment", "Product") for k in kinds):
+                continue
+            address = node.get("address", {})
+            if not isinstance(address, dict):
+                continue
+            street = text(address.get("streetAddress"))
+            city = text(address.get("addressLocality")).title()
+            region = text(address.get("addressRegion"))
+            if not street or not re.match(r"^\\d+\\s+\\S+", street) or city.casefold() not in TOWNS or region.upper() not in ("PA", "PENNSYLVANIA"):
+                continue
+            area = node.get("floorSize") or node.get("floorArea") or {}
+            if isinstance(area, dict):
+                unit = text(area.get("unitCode") or area.get("unitText")).lower()
+                if unit and unit not in ("ftk", "sqft", "sq ft", "square feet", "ft2"):
+                    continue
+                area = area.get("value")
+            sqft = digits(area)
+            offers = node.get("offers") or {}
+            if isinstance(offers, list):
+                offers = offers[0] if offers else {}
+            if not isinstance(offers, dict):
+                offers = {}
+            price = digits(offers.get("price") or node.get("price"))
+            link = node.get("url") or offers.get("url") or source["url"]
+            if not isinstance(link, str) or urlparse(link).netloc.lower().removeprefix("www.") != urlparse(source["url"]).netloc.lower().removeprefix("www."):
+                link = source["url"]
+            beds = digits(node.get("numberOfBedrooms"))
+            baths = digits(node.get("numberOfBathroomsTotal"))
+            record = make_record(source["name"], street, city, price, sqft, "Status unverified", link, checked, beds, baths)
+            if record:
+                results.append(record)
+    return results
+
 def run():
     checked = datetime.now(timezone.utc).date().isoformat()
     statuses, extracted = [], []
-    for source in SOURCES:
+    for source in SOURCES + directory_sources():
         try:
             soup = fetch_page(source["url"])
-            records = {"bentley": parse_bentley, "robin": parse_robin}[source["parser"]](soup, checked)
+            records = ({"bentley": parse_bentley, "robin": parse_robin}[source["parser"]](soup, checked) if source["parser"] != "structured" else structured_records(soup, source, checked))
             extracted.extend(records)
             statuses.append({"name": source["name"], "state": "checked", "count": len(records), "checked_at": checked})
             print(f'{source["name"]}: {len(records)} eligible properties')
@@ -199,7 +268,7 @@ def run():
     unique = dedupe(extracted)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(unique, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    STATUS.write_text(json.dumps({"checked_at": checked, "source_count": len(SOURCES),
+    STATUS.write_text(json.dumps({"checked_at": checked, "source_count": len(statuses),
                                   "listing_count": len(unique), "sources": statuses}, indent=2) + "\n",
                       encoding="utf-8")
     print(f"Saved {len(unique)} public-source listings")
