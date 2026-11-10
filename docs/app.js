@@ -37,5 +37,5 @@ render()}catch(err){$('count').textContent='Could not load the inventory data';$
 
 for(const id of ['query','city','price','sqft','beds','baths','source','sort'])$(id).addEventListener('input',render);
 $('reset').addEventListener('click',()=>{$('query').value='';$('city').value='';$('price').value='';$('sqft').value='3001';$('beds').value='0';$('baths').value='0';$('source').value='';$('sort').value='newest';render()});
-$('refresh').addEventListener('click',()=>{const b=$('refresh');b.disabled=true;b.textContent='Refreshing published data…';init().finally(()=>{b.disabled=false;b.textContent='↻ Refresh published listings'})});
+$('refresh').addEventListener('click',()=>{const b=$('refresh');b.disabled=true;b.textContent='Opening collection workflow…';window.open('https://github.com/hoseinmaleki-lab/HomeFinder/actions/workflows/collect-public.yml','_blank','noopener,noreferrer');init().finally(()=>{b.disabled=false;b.textContent='↻ Refresh all sources'})});
 $('tableBtn').addEventListener('click',()=>setView('table'));$('cardBtn').addEventListener('click',()=>setView('card'));init();
