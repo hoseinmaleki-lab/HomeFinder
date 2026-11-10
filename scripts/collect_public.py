@@ -71,11 +71,13 @@ def fetch_page(url):
 def parse_location(s):
     s = text(s)
     m = re.search(r"(.+?)(?:,?\s+)([A-Za-z][A-Za-z ]+),?\s+PA\s+\d{5}", s, re.I)
-    if not m:
-        # Some tables collapse street and city, without a space.
+    if not m or text(m.group(2)).casefold() not in TOWNS:
+        # Some tables collapse street and town, without a separating space.
+        m = None
         for town in sorted(TOWNS, key=len, reverse=True):
-            m = re.search(r"(.+?)\s*("+re.escape(town)+r")\s*,?\s*PA\s+\d{5}", s, re.I)
-            if m:
+            attempt = re.search(r"(.+?)\s*("+re.escape(town)+r")\s*,?\s*PA\s+\d{5}", s, re.I)
+            if attempt:
+                m = attempt
                 break
     if not m:
         return None
