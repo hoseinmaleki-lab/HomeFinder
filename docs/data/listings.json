@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "address": "422 Black Swan Lane",
+    "city": "Berwyn, PA 19312",
+    "price": 2950000,
+    "beds": 5,
+    "baths": 6,
+    "sqft": 5000,
+    "source": "Robin Gordon Group",
+    "status": "For Sale",
+    "url": "https://robingordon.com/properties/sale",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "1088 Broadmoor Road",
+    "city": "Bryn Mawr, PA 19010",
+    "price": 1500000,
+    "beds": 4,
+    "baths": 4,
+    "sqft": 4810,
+    "source": "Robin Gordon Group",
+    "status": "For Sale",
+    "url": "https://robingordon.com/properties/sale",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "100 Cherry Lane",
+    "city": "Wynnewood, PA 19096",
+    "price": 1100000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 3894,
+    "source": "Robin Gordon Group",
+    "status": "Active Under Contract",
+    "url": "https://robingordon.com/properties/sale",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "726 John Barry Drive",
+    "city": "Bryn Mawr, PA 19010",
+    "price": 3999999,
+    "beds": 6,
+    "baths": 9,
+    "sqft": 8700,
+    "source": "Société Select | SERHANT.",
+    "status": "For Sale",
+    "url": "https://societeselect.com/mainline/sale",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "1509 City Avenue",
+    "city": "Wynnewood, PA 19096",
+    "price": 739999,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3273,
+    "source": "Lisa Ciccotelli Real Estate Group",
+    "status": "Listing status unconfirmed",
+    "url": "https://ciccotelligroup.com/listing/1509-city-ave-wynnewood-pa-19096/",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "104 College Avenue",
+    "city": "Haverford, PA 19041",
+    "price": 2999000,
+    "beds": 5,
+    "baths": 5,
+    "sqft": 6792,
+    "source": "Lisa Ciccotelli Real Estate Group",
+    "status": "Active on agent page",
+    "url": "https://lisaciccotelli.com/agents/lisa-ciccotelli/",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "625 Haverford Road",
+    "city": "Haverford, PA 19041",
+    "price": 769900,
+    "beds": 5,
+    "baths": 5,
+    "sqft": 4300,
+    "source": "Compass public listings",
+    "status": "Listed",
+    "url": "https://www.compass.com/homes-for-sale/haverford-pa/",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "231 Laurel Lane",
+    "city": "Haverford, PA 19041",
+    "price": 4595000,
+    "beds": 7,
+    "baths": 10,
+    "sqft": 14914,
+    "source": "Compass public listings",
+    "status": "Coming Soon",
+    "url": "https://www.compass.com/homes-for-sale/haverford-pa/",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "122 Birch Avenue",
+    "city": "Bala Cynwyd, PA 19004",
+    "price": 799000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 3417,
+    "source": "Compass public listings",
+    "status": "New",
+    "url": "https://www.compass.com/homes-for-sale/lower-merion-township-montgomery-county-pa/",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "address": "427 Cotswold Lane",
+    "city": "Wynnewood, PA 19096",
+    "price": 1050000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 3298,
+    "source": "Compass public listings",
+    "status": "Listed",
+    "url": "https://www.compass.com/homes-for-sale/lower-merion-township-montgomery-county-pa/",
+    "checked_at": "2026-11-10"
+  }
+]
