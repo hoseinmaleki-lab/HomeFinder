@@ -1,6 +1,6 @@
 [
   {
-    "address": "2,950,000 422 BLACK SWAN LANE",
+    "address": "422 BLACK SWAN LANE",
     "city": "Berwyn",
     "price": 2950000,
     "sqft": 5000,
@@ -13,7 +13,7 @@
     "data_origin": "public_website"
   },
   {
-    "address": "1,500,000 1088 BROADMOOR ROAD",
+    "address": "1088 BROADMOOR ROAD",
     "city": "Bryn Mawr",
     "price": 1500000,
     "sqft": 4810,
