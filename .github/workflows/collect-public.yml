@@ -1,5 +1,11 @@
 name: Collect public property pages
 on:
+  push:
+    paths:
+      - "scripts/collect_public.py"
+      - "tests/test_collect_public.py"
+      - "requirements-public.txt"
+      - ".github/workflows/collect-public.yml"
   schedule:
     - cron: '41 12,22 * * *'
   workflow_dispatch:
@@ -17,6 +23,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements-public.txt
+      - name: Test public-source parsers
+        run: python -m unittest discover -s tests -v
       - name: Collect only robots-permitted public pages
         run: python scripts/collect_public.py
       - name: Validate collected inventory
