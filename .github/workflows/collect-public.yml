@@ -1,0 +1,43 @@
+name: Collect public property pages
+on:
+  schedule:
+    - cron: '41 12,22 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: homefinder-public-source-sync
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-public.txt
+      - name: Collect only robots-permitted public pages
+        run: python scripts/collect_public.py
+      - name: Validate collected inventory
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("docs/data/public_listings.json").read_text())
+          assert isinstance(data,list)
+          for x in data:
+              assert x["sqft"]>3000 and x["url"].startswith("https://")
+              assert x["data_origin"]=="public_website"
+          print("Validated",len(data),"records")
+          PY
+      - name: Commit current public-source results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/public_listings.json docs/data/public_source_status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public builder and brokerage property listings"
+            git pull --rebase
+            git push
+          fi
