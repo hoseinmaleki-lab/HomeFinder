@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-11-10",
-  "source_count": 2,
+  "source_count": 30,
   "listing_count": 7,
   "sources": [
     {
@@ -13,6 +13,177 @@
       "name": "Robin Gordon Group",
       "state": "checked",
       "count": 2,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Lisa Ciccotelli Real Estate Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Soci\u00e9t\u00e9 Select | SERHANT.",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "BlackLabel Luxury",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Kathy Gubernick & Liz Feldman (Main Line Fine Homes)",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Houder Nu\u00f1ez-Strid Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Meghan Chorin Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "O'Connor Barton Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Siobhan Cooney",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Stephanie MacDonald / MacDonald Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Lavinia Smerconish",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Lisa Yakulis",
+      "state": "unavailable",
+      "count": 0,
+      "reason": "Not fetched: robots.txt unavailable (202); fail closed",
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Doug Fero / Main Line Houses",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Jordan Wiener Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Deb Dorsey Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Jennifer LeBow",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Reid Rosenthal / Rosenthal Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "The Rife Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Mary Beth Hurtado / Distinctive Homes Main Line",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Collin + Colleen Whelan Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Chris Chodkowski Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Main Line McCann Team",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Tom Toole Sales Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "John Collins",
+      "state": "unavailable",
+      "count": 0,
+      "reason": "Not fetched: robots.txt checked",
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Brett Furman Group",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Duffy Real Estate",
+      "state": "unavailable",
+      "count": 0,
+      "reason": "Not fetched: robots.txt access forbidden",
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Crescent Real Estate Brokerage",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Keller Williams Main Line",
+      "state": "checked",
+      "count": 0,
+      "checked_at": "2026-11-10"
+    },
+    {
+      "name": "Peter Stefanatos",
+      "state": "checked",
+      "count": 0,
       "checked_at": "2026-11-10"
     }
   ]
