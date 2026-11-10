@@ -1,50 +1,344 @@
 [
   {
-    "name": "Bright MLS",
-    "type": "MLS",
-    "url": "https://www.brightmls.com/",
-    "note": "Ask your buyer's agent about permitted Coming Soon and Internet No listings."
+    "name": "Robin Gordon Group",
+    "url": "https://robingordon.com/properties/elite",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Compass",
-    "type": "Brokerage / private listings",
-    "url": "https://www.compass.com/",
-    "note": "Ask Main Line agents about eligible Private Exclusives and Coming Soon properties."
+    "name": "Lisa Ciccotelli Real Estate Group",
+    "url": "https://lisaciccotelli.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Kurfiss Sotheby's International Realty",
-    "type": "Luxury brokerage",
-    "url": "https://www.kurfiss.com/",
-    "note": "Main Line luxury brokerage; inquire directly about quiet listings."
+    "name": "Société Select | SERHANT.",
+    "url": "https://societeselect.com/mainline/sale",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "SERHANT.",
-    "type": "Brokerage",
-    "url": "https://serhant.com/",
-    "note": "Contact local agents regarding pocket and exclusive opportunities."
+    "name": "BlackLabel Luxury",
+    "url": "https://blacklabelkw.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Bentley Homes",
-    "type": "Builder",
-    "url": "https://www.bentleyhomes.com/",
-    "note": "Check new-construction releases and contact the builder directly."
+    "name": "Kathy Gubernick & Liz Feldman (Main Line Fine Homes)",
+    "url": "https://mainlinefinehomes.com/private-exclusives",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Zillow",
-    "type": "Public portal",
-    "url": "https://www.zillow.com/",
-    "note": "Useful baseline, not exhaustive."
+    "name": "Houder Nuñez-Strid Team",
+    "url": "https://houdernunezstrid.com/private-exclusives",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Redfin",
-    "type": "Public portal",
-    "url": "https://www.redfin.com/",
-    "note": "Useful baseline, not exhaustive."
+    "name": "Meghan Chorin Team",
+    "url": "https://www.meghanchorinteam.com/compass-private-exclusives",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
   },
   {
-    "name": "Realtor.com",
-    "type": "Public portal",
-    "url": "https://www.realtor.com/",
-    "note": "Useful baseline, not exhaustive."
+    "name": "O'Connor Barton Team",
+    "url": "https://oconnorbarton.com/private-exclusives",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Siobhan Cooney",
+    "url": "https://cooneyhomes.com/compass-exclusive",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Stephanie MacDonald / MacDonald Team",
+    "url": "https://themacdonaldteam.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Lavinia Smerconish",
+    "url": "https://laviniasmerconish.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Lisa Yakulis",
+    "url": "https://www.sothebysrealty.com/kurfiss/eng/about-us",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Doug Fero / Main Line Houses",
+    "url": "https://mainlinehouses.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Jordan Wiener Team",
+    "url": "https://www.jordanwiener.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Deb Dorsey Team",
+    "url": "https://debdorsey.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Jennifer LeBow",
+    "url": "https://jenniferlebow.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Reid Rosenthal / Rosenthal Group",
+    "url": "https://reidrosenthal.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "The Rife Group",
+    "url": "https://www.compass.com/agents/the-rife-group/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Sue Fitzgerald Team",
+    "url": "https://www.compass.com/agents/susan-fitzgerald-team/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Bryce Kubecka",
+    "url": "https://www.compass.com/agents/bryce-kubecka/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Lisa Semerjian",
+    "url": "https://www.compass.com/agents/lisa-semerjian/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Mary Beth Hurtado / Distinctive Homes Main Line",
+    "url": "https://www.mainlinehomesmb.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Collin + Colleen Whelan Team",
+    "url": "https://the2cols.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Chris Chodkowski Group",
+    "url": "https://chrischodkowski.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Main Line McCann Team",
+    "url": "https://mccannteam.com/homepage-main-line-mccann-team",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Tom Toole Sales Group",
+    "url": "https://www.tomtoole.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "John Collins",
+    "url": "https://main-line-paoli-pa.remax.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Brett Furman Group",
+    "url": "https://brettfurman.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Duffy Real Estate",
+    "url": "https://www.duffyrealestate.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Crescent Real Estate Brokerage",
+    "url": "https://crescentrealestate.net/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Keller Williams Main Line",
+    "url": "https://mainlinekw.com/team",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "RE/MAX Main Line",
+    "url": "https://main-line-paoli-pa.remax.com/",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Kurfiss Sotheby's International Realty — Main Line office",
+    "url": "https://www.sothebysrealty.com/kurfiss/eng/about-us",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Peter Stefanatos",
+    "url": "https://www.mainlinerealty.co/search",
+    "type": "Agent / brokerage",
+    "note": "Research contact for Main Line listings; verify any availability and obtain permission before sharing private inventory."
+  },
+  {
+    "name": "Bright MLS via buyer agent",
+    "url": "https://brightmls.my.site.com/learnbrightmls/s/article/Coming-Soon-Listings",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Compass See It First",
+    "url": "https://www.compass.com/see-it-first/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Compass Private Exclusives Book / office",
+    "url": "https://www.compass.com/newsroom/press-releases/4aPEadsMI1yWCqXnY2NON2/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Robin Gordon private access",
+    "url": "https://robingordon.com/properties/elite",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Lisa Ciccotelli quiet listings",
+    "url": "https://lisaciccotelli.com/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Société Select pocket listings",
+    "url": "https://societeselect.com/mainline/sale",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "BlackLabel Luxury quiet listings",
+    "url": "https://blacklabelkw.com/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Bentley Homes new releases",
+    "url": "https://www.bentleyhomes.com/available-homes/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Rockwell Custom / Development Group",
+    "url": "https://rockwelldevelopmentgroup.com/new-communities/main-line/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Foxlane Homes",
+    "url": "https://foxlanehomes.com/cities/philadelphia/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Pohlig Builders",
+    "url": "https://pohligbuilders.com/residences/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Redfin Coming Soon / Early Access",
+    "url": "https://www.redfin.com/neighborhood/351096/PA/Bala-Cynwyd/Main-Line/new-listings",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Keller Williams Main Line IDX",
+    "url": "https://mainlinekw.com/home-search/listings",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Zillow FSBO filter",
+    "url": "https://www.zillow.com/pa/fsbo/",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "FSBO.com",
+    "url": "https://fsbo.com/search/list/state/pa",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Max Spann Auctions",
+    "url": "https://www.maxspann.com/auctions",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Chester County Sheriff Sales",
+    "url": "https://www.chesco.org/3262/Sheriff-Sales",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Montgomery County Sheriff Sales",
+    "url": "https://www.montgomerycountypa.gov/departments/sheriffs-office/sheriff-sales",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Montgomery County assessment records",
+    "url": "https://www.montgomerycountypa.gov/departments/board-assessment-appeals/property-records-property-information",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Delaware County deed search",
+    "url": "https://www.delcopa.gov/delaware-county-recorder-deeds/public-access-sites",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Chester County ChescoViews",
+    "url": "https://www.chesco.org/2198/ChescoViews",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Main Line townships' planning and zoning agendas",
+    "url": "https://www.chesco.org/2198/ChescoViews",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
+  },
+  {
+    "name": "Local broker Instagram / newsletter announcements",
+    "url": "https://robingordon.com/properties/elite",
+    "type": "Discovery channel",
+    "note": "Additional research avenue. It is not an automatically connected feed; confirm terms, access, availability and eligibility."
   }
 ]
