@@ -154,8 +154,11 @@ def parse_robin(soup, checked):
         if city.casefold() not in TOWNS:
             continue
         address = text(mloc.group(1))
-        # The label and address may run together; keep text after the first dollar amount only.
+        # Strip duplicate price text before the street (cards sometimes omit "$").
+        address = re.sub(r"^(?:\d{1,3}(?:,\d{3})+\s+)+", "", address)
         address = re.sub(r"^.*?\$[\d,]+\s*", "", address)
+        if not re.match(r"^\d+\s+\S+", address):
+            continue
         beds = re.search(r"(\d+)\s*Beds?", candidate, re.I)
         baths = re.search(r"(\d+(?:\.\d+)?)\s*Baths?", candidate, re.I)
         record = make_record("Robin Gordon Group", address, city,
