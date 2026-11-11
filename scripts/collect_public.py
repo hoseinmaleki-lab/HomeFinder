@@ -225,7 +225,7 @@ def structured_records(soup, source, checked):
             street = text(address.get("streetAddress"))
             city = text(address.get("addressLocality")).title()
             region = text(address.get("addressRegion"))
-            if not street or not re.match(r"^\\d+\\s+\\S+", street) or city.casefold() not in TOWNS or region.upper() not in ("PA", "PENNSYLVANIA"):
+            if not street or not re.match(r"^\d+\s+\S+", street) or city.casefold() not in TOWNS or region.upper() not in ("PA", "PENNSYLVANIA"):
                 continue
             area = node.get("floorSize") or node.get("floorArea") or {}
             if isinstance(area, dict):
