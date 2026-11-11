@@ -1,6 +1,6 @@
 import unittest
 from bs4 import BeautifulSoup
-from scripts.collect_public import parse_bentley, parse_location, dedupe, make_record
+from scripts.collect_public import parse_bentley, parse_location, dedupe, make_record, structured_records
 
 class CollectorTests(unittest.TestCase):
     def test_town_is_separated_from_concatenated_address(self):
@@ -26,6 +26,19 @@ class CollectorTests(unittest.TestCase):
         items = dedupe([a,b])
         self.assertEqual(len(items),1)
         self.assertEqual(items[0]["also_listed_by"],["B"])
+    def test_structured_listing_with_numeric_address(self):
+        sample = """<script type="application/ld+json">
+        {"@type":"SingleFamilyResidence","address":{"streetAddress":"218 Grays Ln","addressLocality":"Haverford","addressRegion":"PA"},
+         "floorSize":{"value":4200,"unitCode":"FTK"},"offers":{"price":1250000},
+         "numberOfBedrooms":5,"numberOfBathroomsTotal":4,
+         "url":"https://example.com/homes/218-grays"}
+        </script>"""
+        source = {"name":"Test Brokerage","url":"https://example.com/listings"}
+        items = structured_records(BeautifulSoup(sample,"html.parser"),source,"2026-11-10")
+        self.assertEqual(len(items),1)
+        self.assertEqual(items[0]["address"],"218 Grays Ln")
+        self.assertEqual(items[0]["sqft"],4200)
+        self.assertEqual(items[0]["price"],1250000)
     def test_excludes_out_of_area_and_small(self):
         self.assertIsNone(make_record("A","123 Main St","Philadelphia",1000000,5000,"For Sale","https://example.com","2026-11-10"))
         self.assertIsNone(make_record("A","123 Main St","Wayne",1000000,2000,"For Sale","https://example.com","2026-11-10"))
