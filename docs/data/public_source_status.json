@@ -90,8 +90,9 @@
     },
     {
       "name": "Jordan Wiener Team",
-      "state": "checked",
+      "state": "unavailable",
       "count": 0,
+      "reason": "Not fetched: robots.txt access forbidden",
       "checked_at": "2026-11-14"
     },
     {
