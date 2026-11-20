@@ -9,7 +9,7 @@
     "status": "For Sale",
     "source": "Robin Gordon Group",
     "url": "https://robingordon.com/properties/422-black-swan-lane-berwyn-pa-us-19312-805601175580",
-    "checked_at": "2026-11-19",
+    "checked_at": "2026-11-20",
     "data_origin": "public_website"
   },
   {
@@ -22,72 +22,7 @@
     "status": "For Sale",
     "source": "Robin Gordon Group",
     "url": "https://robingordon.com/properties/1088-broadmoor-road-bryn-mawr-pa-us-19010-805484981620",
-    "checked_at": "2026-11-19",
-    "data_origin": "public_website"
-  },
-  {
-    "address": "107 Palmetto Lane",
-    "city": "Devon",
-    "price": 2499900,
-    "sqft": 4014,
-    "beds": null,
-    "baths": null,
-    "status": "Available (builder)",
-    "source": "Bentley Homes",
-    "url": "https://www.bentleyhomes.com/price-list/",
-    "checked_at": "2026-11-19",
-    "data_origin": "public_website"
-  },
-  {
-    "address": "718 South Waterloo Road",
-    "city": "Devon",
-    "price": 3179900,
-    "sqft": 5082,
-    "beds": null,
-    "baths": null,
-    "status": "Available (builder)",
-    "source": "Bentley Homes",
-    "url": "https://www.bentleyhomes.com/available-homes/718-south-waterloo-road/",
-    "checked_at": "2026-11-19",
-    "data_origin": "public_website"
-  },
-  {
-    "address": "10 Laurel Circle",
-    "city": "Malvern",
-    "price": 2599900,
-    "sqft": 4448,
-    "beds": null,
-    "baths": null,
-    "status": "Available (builder)",
-    "source": "Bentley Homes",
-    "url": "https://www.bentleyhomes.com/available-homes/10-laurel-circle/",
-    "checked_at": "2026-11-19",
-    "data_origin": "public_website"
-  },
-  {
-    "address": "2110 Union Hill Road",
-    "city": "Malvern",
-    "price": 1999900,
-    "sqft": 5306,
-    "beds": null,
-    "baths": null,
-    "status": "Available (builder)",
-    "source": "Bentley Homes",
-    "url": "https://www.bentleyhomes.com/available-homes/2110-union-hill-road/",
-    "checked_at": "2026-11-19",
-    "data_origin": "public_website"
-  },
-  {
-    "address": "39 Old Covered Bridge Road",
-    "city": "Newtown Square",
-    "price": 2995000,
-    "sqft": 4448,
-    "beds": null,
-    "baths": null,
-    "status": "Available (builder)",
-    "source": "Bentley Homes",
-    "url": "https://www.bentleyhomes.com/available-homes/39-old-covered-bridge-road/",
-    "checked_at": "2026-11-19",
+    "checked_at": "2026-11-20",
     "data_origin": "public_website"
   }
 ]
