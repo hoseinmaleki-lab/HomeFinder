@@ -1,12 +1,12 @@
 {
   "checked_at": "2026-11-20",
   "source_count": 30,
-  "listing_count": 2,
+  "listing_count": 7,
   "sources": [
     {
       "name": "Bentley Homes",
       "state": "checked",
-      "count": 0,
+      "count": 5,
       "checked_at": "2026-11-20"
     },
     {
@@ -90,9 +90,8 @@
     },
     {
       "name": "Jordan Wiener Team",
-      "state": "unavailable",
+      "state": "checked",
       "count": 0,
-      "reason": "Not fetched: robots.txt access forbidden",
       "checked_at": "2026-11-20"
     },
     {
